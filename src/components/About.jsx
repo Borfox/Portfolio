@@ -1,6 +1,9 @@
+import { motion } from 'framer-motion'
+
+
 function About() {
   return (
-    <div className="flex flex-col gap-4">
+    <motion.div className="flex flex-col gap-4" initial={{opacity: 0, y: 30}} whileInView={{opacity: 1, x: 0}} transition={{duration: 0.5}} viewport={{once: true}}>
       <h2 className="text-sm font-bold tracking-widest text-slate-100 uppercase">
         About
       </h2>
@@ -15,7 +18,7 @@ function About() {
         de procesos, lo que me permite crear soluciones completas que van desde 
         interfaces de usuario hasta flujos de trabajo automatizados.
       </p>
-    </div>
+    </motion.div>
   )
 }
 
