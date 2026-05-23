@@ -1,6 +1,10 @@
+import { motion } from 'framer-motion'
+import { FaLinkedin, FaGithub,FaEnvelope } from 'react-icons/fa'
+
+
 function Contact() {
   return (
-    <div className="flex flex-col gap-4">
+    <motion.div className="flex flex-col gap-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} >
       <h2 className="text-sm font-bold tracking-widest text-slate-100 uppercase">
         Contact
       </h2>
@@ -10,28 +14,28 @@ function Contact() {
       </p>
 
       <div className="flex flex-col gap-3 mt-2">
-        <a
-          href="mailto:tucorreo@email.com"
-          className="flex items-center gap-3 text-slate-400 hover:text-slate-100 transition-colors">
-          <span>📧</span>
-          <span>tucorreo@email.com</span>
-        </a>
-        <a
+        <motion.a
+          href="mailto:boris.ladera@gmail.com"
+          className="flex items-center gap-3 text-slate-400 hover:text-slate-100 transition-colors" whileHover={{ x: 5 }}>
+          <FaEnvelope size={18} />
+          <span>boris.ladera@gmail.com</span>
+        </motion.a>
+        <motion.a
           href="https://www.linkedin.com/in/boris-ladera/?locale=en-US"
           target="_blank"
-          className="flex items-center gap-3 text-slate-400 hover:text-slate-100 transition-colors">
-          <span>💼</span>
+          className="flex items-center gap-3 text-slate-400 hover:text-slate-100 transition-colors" whileHover={{ x: 5 }}>
+          <FaLinkedin size={18} />
           <span>LinkedIn</span>
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="https://github.com/Celtic-L"
           target="_blank"
-          className="flex items-center gap-3 text-slate-400 hover:text-slate-100 transition-colors">
-          <span>🐙</span>
+          className="flex items-center gap-3 text-slate-400 hover:text-slate-100 transition-colors" whileHover={{ x: 5 }}>
+          <FaGithub size={18} />
           <span>GitHub</span>
-        </a>
+        </motion.a>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
