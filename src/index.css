@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,4 +35,8 @@ body {
 ::selection {
   background: #334155;
   color: #e2e8f0;
+}
+
+.hero-body, .about-body{
+  padding:5em;
 }

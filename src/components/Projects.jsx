@@ -3,30 +3,51 @@ import { motion } from 'framer-motion'
 const projects = [
   {
     id: 1,
-    title: "Sitio Web HTML/CSS/JS",
-    description: "Sitio web desarrollado desde cero utilizando HTML, CSS, JavaScript, Bootstrap y jQuery.",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
-    link: "#"
+    title: "Blue Magic Internet",
+    description: "Sitio web que presenta los servicios de internet 5G, sus precios y metodos de contacto para brindar internet en zonas rurales.",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery","Responsive"],
+    link: "https://bmi-internet.com/"
   },
   {
     id: 2,
-    title: "Sitio Web PHP",
-    description: "Sitio web desarrollado con PHP, HTML, CSS, JavaScript, Bootstrap y jQuery.",
-    tags: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
-    link: "#"
+    title: "Asociacion Nacional de Tenis de Mesa de Panamá",
+    description: "Sitio web creado con el fin de brindar noticias, informacion, fechas de competencias y ranking de los jugadores. desarrollado con PHP, HTML, CSS, JavaScript, Bootstrap y jQuery.",
+    tags: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Responsive"],
+    link: "https://atmp.epizy.com/ATMP/"
   },
   {
     id: 3,
-    title: "Proyectos WordPress",
-    description: "4 proyectos online desarrollados con WordPress, incluyendo sitios corporativos y E-commerces.",
-    tags: ["WordPress", "SEO", "E-commerce"],
-    link: "#"
+    title: "Sking Legal",
+    description: "Sitio web desarrollado para la firma de abogados Sking Legal siendo la principal representate Suezanne King",
+    tags: ["WordPress", "SEO", "SMTP", "JavaScript", "PHP", "Elementor","Responsive"],
+    link: "https://skinglegal.co.uk/"
   },
   {
     id: 4,
-    title: "Automatización RPA - UiPath",
-    description: "Proyecto de automatización de procesos desarrollado con UiPath en el área financiera.",
-    tags: ["UiPath", "REFramework", "RPA", "VB.NET"],
+    title: "Djdoors",
+    description: "Sitio web enfocado en el servicio de instalacion de puertas automaticas comerciales y manuales para diferentes infraestructuras.",
+    tags: ["WordPress", "SEO", "SMTP", "JavaScript", "Divi", "CSS", "HTML", "Responsive"],
+    link: "https://djdoors.co.uk/"
+  },
+  {
+    id: 5,
+    title: "Itrackppe",
+    description: "Sitio web enfocado en las mejores practicas de PPE para empresas de construccion. Se brinda informacion de la empresa y procedimientos de sus servicios. ",
+    tags: ["WordPress", "SEO", "SMTP, JavaScript, Elementor","Responsive"],
+    link: "https://itrackppe.com/"
+  },
+  {
+    id: 6,
+    title: "High Point Yatching",
+    description: "Sitio web especializado para yates en diferentes ubicaciones del mediterraneo.",
+    tags: ["WordPress", "SEO", "SMTP, JavaScript, PHP, Elementor","Responsive", "CSS"],
+    link: "https://www.highpointyachting.com/"
+  },
+  {
+    id: 7,
+    title: "JPAmbientalista Automation",
+    description: "Proyecto RPA desarrollado con UiPath en el area de topografia, Se mejoro el tiempo de culminacion de procesos de 1 semana a tan solo 2 dias resultando en un incremento de la eficiencia hasta del 65%.",
+    tags: ["UiPath", "REFramework", "RPA", "VB.NET", "Document Processing", "Excel", "Regex"],
     link: "#"
   }
 ]

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 
 /* Importacion de componentes */
 import Hero from "./components/Hero";
+import Experience from './components/Experience'; 
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -32,19 +33,22 @@ function App(){
   }, [])
 
   return (
-    <div className="bg-slate-900 min-h-screen text-slate-300 flex">
+    <div  className="bg-slate-900 min-h-screen text-slate-300 flex" >
+
+      <div className="flex flex-col lg:flex-row"> 
       
-      <div className="w-1/2 h-screen sticky top-0 flex flex-col justify-between p-16">
-        <Hero seccionActiva={seccionActiva} />
+        <div className="w-full lg:w-1/2 lg:h-screen lg:sticky lg:top-0 flex flex-col justify-between p-8 lg:p-16 hero-body">
+          <Hero seccionActiva={seccionActiva} />
+        </div>
+        
+        <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col gap-24 about-body">
+          <section id="about"><About /></section>
+          <section id="experience"><Experience/></section>
+          <section id="skills"><Skills /></section>
+          <section id="projects"><Projects /></section>
+          <section id="contact"><Contact /></section>
+        </div>
       </div>
-      
-      <div className="w-1/2 p-16 flex flex-col gap-24">
-        <section id="about"><About /></section>
-        <section id="skills"><Skills /></section>
-        <section id="projects"><Projects /></section>
-        <section id="contact"><Contact /></section>
-      </div>
-            
     </div>
   )
 }
